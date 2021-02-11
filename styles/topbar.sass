@@ -1,0 +1,24 @@
+@use "var"
+
+.Topbar
+
+  a
+    text-decoration: none
+    &:hover
+      color: var.$color-light !important
+      text-decoration: none
+
+  & .navbar-toggler
+    border: none
+    &:focus
+      box-shadow: none !important
+
+  .nav-link
+    color: var.$color-dark
+    &:not(:last-child)
+    &:hover, &.active
+      background: var.$color-darker
+      color: var.$color-light !important
+
+  .navbar-collapse.show .nav-link, .navbar-collapse.collapsing .nav-link
+    padding: .375rem .75rem
