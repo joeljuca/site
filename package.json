@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "build": "next build -p ${PORT:-3000}",
-    "dev": "next dev -p ${PORT:-3000}",
+    "build": "next build",
+    "dev": "next dev",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
-    "start": "next start -p ${PORT:-3000}"
+    "start": "next start"
   },
   "dependencies": {
     "next": "10.0.6",
