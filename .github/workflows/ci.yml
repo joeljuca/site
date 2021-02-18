@@ -9,11 +9,18 @@ on:
   workflow_dispatch:
 
 jobs:
+  check-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          yarn install
+          yarn commit-check
+
   check-style:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
       - run: |
           yarn install
           yarn fmt:check
@@ -22,7 +29,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
       - run: |
           yarn install
           yarn build
