@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.6",
+    "next": "10.0.7",
     "prettier": "2.2.1",
     "react": "17.0.1",
     "react-bootstrap": "1.4.3",
