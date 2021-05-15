@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import { A } from "../components/utils";
 import { Heading } from "../components/heading";
 import { Rainbow } from "../components/rainbow";
 import { Welcome } from "../components/welcome";
@@ -7,7 +8,7 @@ import { Welcome } from "../components/welcome";
 export const Home = () => (
   <>
     <Head>
-      <title>JJ: Welcome!</title>
+      <title>Welcome! - JJ.</title>
 
       <link
         rel="stylesheet"
@@ -22,11 +23,33 @@ export const Home = () => (
     <Heading>
       <Welcome>
         <main>
-          <h1 className="Welcome-title fs-1 fw-bold">Hi, I'm Joel!</h1>
+          <h1 className="Welcome-title fs-1 fw-bold">Welcome!</h1>
           <p className="Welcome-subtitle fs-3 fw-light">
-            I'm a <a href="https://github.com/joeljuca">software engineer</a>,{" "}
-            mentor, and{" "}
-            <a href="https://elug-ce.github.io">community manager</a>.
+            I'm <strong>Joel</strong> - a <strong>software engineer</strong> and{" "}
+            <strong>educator</strong> from Fortaleza, BR 🇧🇷
+          </p>
+          <p className="fw-light text-muted">
+            I write code on{" "}
+            <A href="https://github.com/joeljuca" blank>
+              GitHub
+            </A>
+            , essays about software engineering on{" "}
+            <A
+              href="https://joeljuca.substack.com"
+              blank
+              title="Thoughts about software engineering"
+            >
+              Substack
+            </A>
+            , and I run{" "}
+            <A
+              href="https://elug-ce.github.io"
+              blank
+              title="The local user group and meetup for Elixir and Erlang developers from Ceará, BR"
+            >
+              Elug CE
+            </A>
+            .
           </p>
         </main>
       </Welcome>
