@@ -10,16 +10,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.6",
-    "prettier": "2.2.1",
-    "react": "17.0.1",
-    "react-bootstrap": "1.4.3",
-    "react-dom": "17.0.1",
-    "sass": "1.32.7"
+    "next": "10.2.0",
+    "prettier": "2.3.0",
+    "react": "17.0.2",
+    "react-bootstrap": "1.6.0",
+    "react-dom": "17.0.2",
+    "sass": "1.32.13"
   },
   "devDependencies": {
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "husky": "5.0.9"
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "husky": "6.0.0"
   }
 }
